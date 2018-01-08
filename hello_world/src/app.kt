@@ -20,11 +20,19 @@ fun branchCast(a: Any) {
     println("Here is not a string")
 }
 
+// Smart casting
 fun lengthOfAny(a: Any): Int? {
     if(a is String && a.length > 0) {
         return a.length
     }
     return null
+}
+
+fun some(num: Int?): Int {
+    if(num != null) {
+        return num
+    }
+    return 0
 }
 
 fun main(args: Array<String>) {
@@ -114,6 +122,5 @@ fun main(args: Array<String>) {
         fruit in listOf("letter", "plane") -> println("It is not a fruit =(")
         other == "other" -> println("Other")
     }
-
 
 }
