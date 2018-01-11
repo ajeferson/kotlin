@@ -109,6 +109,7 @@ fun main(args: Array<String>) {
             println("Evaluating with $d")
             initial += d
         }
+
     }, 1.0)
 
     val otherEvaluatable = object: Evaluatable {
